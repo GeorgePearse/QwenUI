@@ -1,0 +1,52 @@
+.image-picker {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.image-picker h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.image-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.image-item:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.image-item.selected {
+  border-color: #007bff;
+  background-color: #e7f3ff;
+}
+
+.image-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.image-item p {
+  font-size: 12px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
